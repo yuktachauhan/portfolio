@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+    * {
+    	box-sizing: border-box; 
+    } 
+body {
+	background-image: url("Screenshot_2017-12-27-18-17-12-01.png");
+	/*background-color: black;*/
+	padding: 30px;
+	font-family: "Times New Roman";
+}
+/*center website*/
+.main {
+	max-width: 1000px;
+	margin:  auto;
+}
+h1 {
+	font-size: 50px;
+	color: green;
+	word-break: break-all;
+}
+.row {
+	margin: 8px -16px;
+}
+/*add padding between each column*/
+.row,
+.row > .column {
+	padding: 8px;
+}
+/*create four equal columns that float next to each other*/
+.column{
+	float: left;
+	width:25%;
+}
+/*clear float after rows*/
+.row:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+/*content*/
+.content{
+	background-color: pink;
+	padding: 10px;
+}
+/*responsive layout makes a two column layout instead of four columns*/
+@media screen and (max-width: 900px)
+{
+	.column {
+		width: 50%;
+	}
+}
+/*responsive layout makes the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px)
+{
+	.column {
+		width: 100%;
+	}
+}
+</style>
+</head>
+<body>
+	<!-- MAIN(Center website) -->
+	<h1>MY FIRST PROJECT </h1>
+	<hr>
+	<h2>MY RESPONSIVE PORTFOLIO</h2>
+	<hr>
+ <div class="row">
+ 	<div class="column">
+ 		<div class="content">
+ 			<img src="IMG20171026163338.jpg" alt="my photo" style="width: 100%">
+ 			<h3>ABOUT MYSELF</h3>
+ 			<p style="color:red  font-family:verdana;">MY NAME IS YUKTA CHAUHAN.I BELONG TO ROORKEE WHICH IS FAMOUS BECAUSE OF IIT ROORKEE.I HAVE COMPLETED MY SCHOOLING FROM ANAND SWAROOP ARYA SARASWATI VIDYA MANDIR,ROORKEE.NOW I AM PERSUING BTECH FROM AKGEC ,GHAZIABAD AND MY BRANCH IS COMPUTER SCIENCE AND ENGINEERING.</p>
+ 		</div>
+ 	</div>
+ 	<div class="column">
+ 		<div class="content">
+ 			<img src="Screenshot_2018-08-16-16-25-35-73.png" alt="MY HOBBIES" style="width: 100%">
+ 			<h3>MY HOBBIES</h3>
+ 			<p> I LIKE LISTENING TO SONGS VERY MUCH AND WATCHING MOTIVATIONAL VIDEOS.I LIKE TO SPEND TIME WITH MY FAMILY ESPECIALLY WITH MY BROTHER DEVANSH.
+ 			I LIKE TAKING WITH MY FRIENDS.I ALSO LIKE STUDYING.</p>
+ 		</div>
+ 	</div>
+ 	<div class="column">
+ 		<div class="content">
+ 			<img src="Screenshot_2018-08-16-16-08-41-47 (2).png" alt="ACADEMICS" style="width: 100%">
+ 			<h3>ACADEMICS</h3>
+ 			<p>MY TENTH CGPA WAS 10.I SCORED 93.4% IN 12th CLASS BOARD EXAMS.MY FIRST YEAR PERCENTAGE WAS 91.77%</p>
+ 		</div>
+ 	</div>
+ 	<div class="column">
+ 		<div class="content">
+ 			<img src="Screenshot_2017-09-20-21-49-35-74.png" alt="THOUGHTS" style="width: 100%">
+ 			<h3>THOUGHTS</h3>
+ 			<p>DO HARDWORK.<br>BE HAPPY AND SWEET.<br>HELP OTHERS </p>
+ 		</div>
+ 	</div>
+ </div>
+ 		<div class="content">
+ 			<img src="Screenshot_2017-12-27-18-19-43-46.png" alt="PROGRAMMER" style="width: 100%">
+ 			<h3>DREAM</h3>
+ 			<p>TO BECOME A VERY GOOD PROGRAMMER SO THAT I CAN DO SOMETHING GREAT FOR MANKIND</p>
+ 		</div>
+ 	</body>
+ 	</html>
+ 
+ 
+
